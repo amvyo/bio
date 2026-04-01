@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jacob</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="cursor-dot" class="custom-cursor-dot"></div>
+    <div id="cursor-trail" class="custom-cursor-trail"></div>
+    <div class="video-bg">
+        <img src="back.jpg" alt="background">
+    </div>
+    <div id="enter-screen" class="enter-screen">
+        <p class="click-text">[ click to enter ]</p>
+    </div>
+    <div id="main-content" class="main-content hidden">
+        <audio id="bg-audio" loop src="World's A Fuck.mp3"></audio>
+        <button id="volume-ctrl" class="volume-btn">
+            <i class="fa-solid fa-volume-high"></i>
+        </button>
+
+        <div class="layout-wrapper" id="card">
+            <div class="glass-panel side-panel">
+                <div class="card-inner">
+                    <div class="music-player">
+                        <img src="ab67616d0000b273a628d9485bccd45e55407a48.jpeg" alt="Album Cover" class="album-cover">
+                        <div class="song-info">
+                            <p class="song-title">World's A Fuck</p>
+                            <p class="artist-name">Sematary</p>
+                            <div class="progress-container">
+                                <div class="progress-bar"></div>
+                                <span class="time">0:00 / 3:15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lyrics-container" id="lyrics-container">
+                        <div class="lyrics-scroll" id="lyrics-scroll">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="glass-panel main-profile-panel">
+                <div class="card-inner">
+                    <div class="profile-section">
+                        <img src="pfp.jpg" alt="Avatar" class="avatar">
+                        <div class="title-container">
+                            <h1>jacob <span class="badges-container" id="badges-container"></span></h1>
+                            <p class="status"><span id="typewriter-text" class="typewriter-text"></span><span
+                                    class="cursor">|</span></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/jOaawd" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/hxrrvr/" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@eternallyrested" target="_blank" class="social-icon"><i
+                                class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <div class="card-footer">
+                        <div class="stat"><i class="fa-solid fa-eye"></i> <span id="view-counter">0</span></div>
+                        <div class="stat"><i class="fa-solid fa-location-dot"></i> your moms place</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
